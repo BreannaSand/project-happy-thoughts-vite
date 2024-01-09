@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.main-wrapper h1 {
+  font-family: Abril Fatface;
+  font-size: 45px;
+  font-weight: 800;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(45deg, #ff199f, #cd8cdd, #5be288, #bef146, #7e6ed8);
+}

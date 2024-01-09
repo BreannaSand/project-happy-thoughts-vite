@@ -5,11 +5,14 @@ import { ThoughtsForm } from './components/ThoughtsForm';
 export const App = () => {
   return (
 
-    <div>
-      Find me in src/app.jsx!!
+
+    <div className="main-wrapper">
+      <h1>Project Happy Thoughts</h1>
+      <h2>Technigo Education Team</h2>
       <ThoughtsForm />
       <ThoughtsFeed />
     </div>
+
 
   )
 };
