@@ -23,20 +23,21 @@ export const ThoughtsFeed = () => {
 
     console.log(data);
 
-    const outputMessage = (() => {
-        var outerMessage = data.map((object) =>
-            object.message
-        )
-        return outerMessage;
-    })
+    const outputMessage = () => {
+        return data.map((object) => (
+            <div key={object.id} className="chat-bubble">
+                {object.message}
+            </div>
+        ));
+    };
 
     return (
         // Display the fetched 'data' in the component's UI.
-        <div>
+        <div className="chat-container">
 
 
             {outputMessage()}
 
         </div>
-    )
-}
+    );
+};
