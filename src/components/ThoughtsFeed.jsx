@@ -46,7 +46,7 @@ export const ThoughtsFeed = () => {
 
     return (
         // Display the fetched 'data' in the component's UI.
-        <div className="message-container">
+        <div className="messages-container">
 
 
             {outputMessage()}

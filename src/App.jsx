@@ -6,9 +6,11 @@ export const App = () => {
   return (
 
 
-    <div >
+    <div className="heading" >
+
       <h1>Project Happy Thoughts</h1>
       <h2>Technigo Education Team</h2>
+
       <ThoughtsForm />
       <ThoughtsFeed />
     </div>

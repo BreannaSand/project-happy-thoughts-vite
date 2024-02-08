@@ -6,6 +6,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  --main-width-mobile: 90%;
+  --main-width-desktop: 70%;
+  --general-padding: 35px;
+  --general-smaller-padding: 20px;
+  --general-mini-padding: 5px;
+  --hover-color: rgb(255, 199, 220);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
 }
 
 code {
@@ -13,14 +23,24 @@ code {
     monospace;
 }
 
-.heading h1 {
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+
+h1 {
   font-family: Abril Fatface;
   font-size: 45px;
   font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #ff199f, #cd8cdd, #5be288, #bef146, #7e6ed8);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(45deg, #ff199f, #cd8cdd, #5be288, #bef146, #7e6ed8);
+
+
 }
 
 .message {
@@ -43,7 +63,7 @@ p {
   margin: 10px 0 15px;
 }
 
-.message-container {
+.messages-container {
   margin: 20px auto;
   padding: 5px var(--general-padding);
   width: 80%;
