@@ -25,15 +25,28 @@ export const ThoughtsFeed = () => {
 
     const outputMessage = () => {
         return data.map((object) => (
-            <div key={object.id} className="chat-bubble">
-                {object.message}
+            <div key={object.id} className="message">
+                <p>{object.message}</p>
+
+                <div className="info-wrapper">
+                    <div className="info-like">
+                        <button type="button" id="likeBtn" className="like-button">
+                            <span className="emoji" aria-label="like button">h</span>
+                        </button>
+                        <span className="num-likes">
+                            x0
+                        </span>
+                    </div>
+
+                    <div className="info-time">2 days ago</div>
+                </div>
             </div>
         ));
     };
 
     return (
         // Display the fetched 'data' in the component's UI.
-        <div className="chat-container">
+        <div className="message-container">
 
 
             {outputMessage()}

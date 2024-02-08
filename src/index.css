@@ -5,6 +5,7 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
 }
 
 code {
@@ -22,11 +23,11 @@ code {
   background: -webkit-linear-gradient(45deg, #ff199f, #cd8cdd, #5be288, #bef146, #7e6ed8);
 }
 
-.chat-bubble {
-  background-color: #ebebeb;
+.message {
+  background-color: #fff;
   border: 1px solid rgb(105, 105, 105);
   margin: 0;
-  padding: 5px var(--general-padding) 15px var(--general-padding);
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -35,10 +36,14 @@ code {
   gap: 10px;
   box-shadow: var(--box-shadow);
   -webkit-box-shadow: var(--box-shadow);
-
+  width: 100%;
 }
 
-.chat-container {
+p {
+  margin: 10px 0 15px;
+}
+
+.message-container {
   margin: 20px auto;
   padding: 5px var(--general-padding);
   width: 80%;
@@ -46,4 +51,27 @@ code {
   flex-direction: column;
   align-items: center;
   gap: 25px;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.num-likes {
+  margin: 0px 0px 0px 5px;
+  font-size: 16px;
+}
+
+.like-button {
+  font-size: 10px;
+  border: none;
+}
+
+.info-time {
+  color: grey;
+
 }
