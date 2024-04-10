@@ -5,12 +5,16 @@ export const ThoughtsForm = () => {
     const apiURL = 'https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts';
 
     const [newThought, setNewThought] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleChange = (event) => {
+        setNewThought(event.target.value);
+    }
 
     const handleThoughtSubmit = (event) => {
         event.preventDefault();
-        setNewThought(event.target.value);
-        //const newThought = {message};
-        console.log(newThought);
+        const newThoughtObject = { message };
+        console.log(newThoughtObject);
     }
     /*
         await fetch(apiURL, {
@@ -36,7 +40,7 @@ export const ThoughtsForm = () => {
         <div className="post-wrapper">
             <h2>What is making you happy right now?</h2>
             <form>
-                <textarea rows="3" placeholder="Share a thought" value={newThought} onChange={handleThoughtSubmit} ></textarea>
+                <textarea rows="3" placeholder="Share a thought" value={newThought} onChange={handleChange} ></textarea>
                 <div className="post-length">
                     <p className="error"></p>
                     <p className="length">
@@ -44,7 +48,7 @@ export const ThoughtsForm = () => {
                         /140
                     </p>
                 </div>
-                <button type="submit" id="submitPostBtn" aria-label="button for submitting your thought" >
+                <button type="submit" id="submitPostBtn" aria-label="button for submitting your thought" onClick={handleThoughtSubmit}>
                     <span className="emoji" aria-label="heart emoji">❤️</span>
                     Send Happy Thought
                     <span className="emoji" aria-label="heart emoji">❤️</span>
