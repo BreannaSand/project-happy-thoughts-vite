@@ -25,7 +25,7 @@ export const ThoughtsFeed = () => {
 
     const outputMessage = () => {
         return data.map((object) => (
-            <div key={object.id} className="message">
+            <div key={object._id} className="message">
                 <p>{object.message}</p>
 
                 <div className="info-wrapper">

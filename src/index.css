@@ -122,3 +122,40 @@ p {
   background: white;
   text-align: center;
 }
+
+.post-length {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+  padding: 0;
+  gap: 25px;
+}
+
+.length {
+  color: gray;
+  margin: 0;
+  min-width: 50px;
+}
+
+.length p {
+  word-break: break-all;
+  white-space: normal;
+}
+
+.post-wrapper button {
+  background-color: #ffb7d2;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 0 0 5px;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.emoji {
+  font-size: 24px;
+}
