@@ -23,7 +23,9 @@ code {
     monospace;
 }
 
-.heading {
+.main-wrapper {
+  margin: 20px auto;
+  padding: 5px var(--general-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,4 +160,11 @@ p {
 
 .emoji {
   font-size: 24px;
+}
+
+@media screen and (min-width:675px) {
+
+  .main-wrapper {
+    width: 60%;
+  }
 }
